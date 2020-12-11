@@ -16,7 +16,7 @@ jobs:
             python-version: 3.8
       
         - name: install requirements
-        - run: pip install -r requirements.txt
+          run: pip install -r requirements.txt
 
         - name: run python
-        - run: python -m script.py
+          run: python -m script.py
