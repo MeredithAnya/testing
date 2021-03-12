@@ -4,7 +4,7 @@ import sentry_sdk
 version = os.environ.get('$GITHUB_SHA', '1.0.0')
 
 # getsentry LOCAL project
-sentry_sdk.init(dsn='https://726d59757f1f4b46852c61dff3dafc9b@meredith.ngrok.io/2, release=version)
+sentry_sdk.init(dsn='https://726d59757f1f4b46852c61dff3dafc9b@meredith.ngrok.io/2', release=version)
 
 # LOCAL
 # sentry_sdk.init(dsn='https://8930388f5eeb4635bb3cf6739817eab7@meredith.ngrok.io/2', release='1')
