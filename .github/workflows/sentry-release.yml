@@ -11,6 +11,7 @@ jobs:
         - name: "Show environmetn variables"
           run: |
             env
+            echo "GITHUB_SHA=$(GITHUB_SHA)" >> $GITHUB_ENV
     check-diff:
       name: check outcode
       runs-on: ubuntu-18.04
