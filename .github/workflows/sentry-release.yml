@@ -25,6 +25,11 @@ jobs:
       
         - name: install requirements
           run: pip install -r requirements.txt
+        
+        - name: show envs
+          run: |
+            env
 
         - name: run python
-          run: python sameold.py
+          run: |
+            python sameold.py
