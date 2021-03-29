@@ -31,5 +31,7 @@ jobs:
             env
 
         - name: run python
+          env:
+            GITHUB_SHA: ${GITHUB_SHA}
           run: |
             python sameold.py
