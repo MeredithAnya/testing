@@ -3,6 +3,14 @@ name: sentry-release
 on: push
 
 jobs:
+    show_environment:
+       name: "Show environment variables"
+       runs-on: ubuntu-latest
+
+       steps:
+        - name: "Show environmetn variables"
+          run: |
+            env
     check-diff:
       name: check outcode
       runs-on: ubuntu-18.04
@@ -25,13 +33,7 @@ jobs:
       
         - name: install requirements
           run: pip install -r requirements.txt
-        
-        - name: show envs
-          run: |
-            env
 
         - name: run python
-          env:
-            GITHUB_SHA: ${GITHUB_SHA}
           run: |
             python sameold.py
