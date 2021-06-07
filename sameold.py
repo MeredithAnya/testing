@@ -20,6 +20,6 @@ def try_oncemore(text):
   
 
 try: 
-   try_oncemore('meep')
+   try_booop('meep')
 except Exception as err:
    sentry_sdk.capture_exception(err)
