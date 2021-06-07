@@ -26,6 +26,7 @@ jobs:
             SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
             SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
             SENTRY_URL: https://meredith.ngrok.io/
+            SENTRY_LOG_LEVEL: "debug"
 
         - name: setup python
           uses: actions/setup-python@v2
